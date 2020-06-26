@@ -5,10 +5,11 @@ Rails.application.routes.draw do
  get "/", to:"pages#home", as:"home"
  get "/about", to:"pages#about", as:"about"
  get "/contact", to:"pages#contact", as:"contact"
+ get "/portfolio", to:"pages#portfolio", as:"portfolio"
 
-  #Display all of the photo
- get "/photos", to:"pages#photos", as:"photos"
 
+
+ 
  #  show a single photo
 get "/photos/:id", to: "photos#show"
 
