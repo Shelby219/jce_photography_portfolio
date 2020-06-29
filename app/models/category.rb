@@ -1,4 +1,4 @@
 class Category < ApplicationRecord
-    has_
+    has_many :posts
 
 end
