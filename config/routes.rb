@@ -30,6 +30,5 @@ resources :posts
 
 
 
-
 end
       
