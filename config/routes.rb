@@ -24,11 +24,11 @@ root 'posts#index'
 #post '/posts',            to: 'posts#create'
 #patch '/posts/:id',       to: 'posts#update'
 #delete '/posts/:id',      to: 'posts#destroy'
-
+    
 
 resources :posts 
 
 
-
+   
 end
       

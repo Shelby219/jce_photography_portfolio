@@ -8,7 +8,8 @@ class PostsController < ApplicationController
           @category_id = Category.find_by(name: params[:category]).id
           @posts = Post.where(category_id: @category_id).order("created_at DESC")
           end
-        end
+          @categories = Category.all
+    end
 
     def show
     end
@@ -20,10 +21,10 @@ class PostsController < ApplicationController
    def create
         @post = Post.new(post_params)
         if @post.save
-           # redirect_to @post, notice: “The post was created!”
-        else 
-            render ‘new’
-        end 
+            redirect_to @post, notice: 'Your post was created successfully'
+          else
+            render :new
+          end
     end
 
     def edit
@@ -31,16 +32,16 @@ class PostsController < ApplicationController
 
     def update
         if @post.update(post_params)
-         #   redirect_to @post, notice: “Update successful”
+            redirect_to @post, notice: 'Update successful'   
         else
-            render ‘edit’
+            render :edit
         end
     end
 
     def destroy
         @post.destroy
-       # redirect_to root_path, notice: “Post destroyed”
-   end
+        redirect_to root_path
+    end
 
     def post_params
     end
@@ -50,7 +51,7 @@ class PostsController < ApplicationController
 
     private
             def post_params
-                params.require(:post).permit(:title, :content, :category_id)
+                params.require(:post).permit(:title, :content, :category_id, :image)
             end
             def find_post
                 @post = Post.find(params[:id])
