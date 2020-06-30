@@ -25,13 +25,12 @@ gem 'jbuilder', '~> 2.7'
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
 
+
+
 gem 'jquery-rails', '~> 4.4'
-
 gem 'bootstrap', '~> 4.5.0'
-
 gem 'font-awesome-rails', '~> 4.7', '>= 4.7.0.5'
-
-gem 'bootstrap-sass', '~> 3.4', '>= 3.4.1'
+#gem 'bootstrap-sass', '~> 3.4', '>= 3.4.1'
 
 
 
