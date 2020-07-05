@@ -1,10 +1,38 @@
-<h1><%= @post.title %></h1>
-<p><%= @post.content %></p>
+
+<%= render "shared/top_nav" %>
+<main role="main">
 
 
-<%= link_to "Edit", edit_post_path(@post) %>
-<%= link_to "Delete", @post, method: :destroy, data: { confirm: "Are you sure?" } %>
+<section class="jumbotron text-center">
+    <div class="container album py-5 bg-light">
+
+        <div class="col">
+
+            <div class="row">
+                        <h1><%= @post.title %></h1>
+            </div>      
+
+                <div class="row">       
+                <%= image_tag @post.image.variant(resize_to_limit: [800, 800]), :class => "img-fluid" %>
+                </div> 
+                
+                <div class="row">     
+                        <p><%= @post.content %></p>
+                </div> 
+
+                <div class="row">          
+                        <div class="post-buttons">
+                        <%= link_to "Edit", edit_post_path(@post), :class => "post-buttons" %>
+                        <%= link_to "Delete", @post, method: :delete, data: { confirm: "Are you sure?" }, :class => "post-buttons" %>
+                </div>
 
 
+                
+            
+        </div>
+    </div>
+</section>
+</main>
 
-<%= image_tag @post.image.variant(resize_to_limit: [100, 100]) %>
+
+<%= render "shared/footer" %>

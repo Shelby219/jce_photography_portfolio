@@ -1,3 +1,107 @@
 // Place all the styles related to the Posts controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+
+/*CATEGORY NAV*/
+
+
+.nav-scroller a, .nav-scroller a:visited {
+    color: black !important;
+    border: 1px solid black;
+    
+    border-radius: 25px;
+    text-decoration: none;
+    font-family: 'Playfair Display SC', serif;
+    letter-spacing: 3px;
+    padding: 10px;
+  }
+
+.category-nav {
+    padding-top: 30px;
+}
+
+.category-nav-items {
+
+    height: 100px;
+}
+/*EACH POST*/
+
+.post-buttons a, .post-buttons a:visited {
+    color: black !important;
+    text-decoration: none;
+    font-family: 'Playfair Display SC', serif;
+    letter-spacing: 3px;
+  }
+  
+.row {
+    justify-content: center;
+    padding: 20px;
+    margin: 20px;
+}
+
+
+
+/*ALL POSTS*/
+
+.img-fluid {
+
+    width:100%;
+}
+
+
+/* PORTFOLIO
+-------------------------------------------------- */
+
+.header {
+    text-align: center;
+    padding: 32px;
+  }
+  
+  .row {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    padding: 0 4px;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+  
+  /* Create four equal columns that sits next to each other */
+  .column {
+    -ms-flex: 30%; /* IE10 */
+    flex: 30%;
+    max-width: 30%;
+    padding: 0 4px;
+  }
+  
+  .img-size {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+    height: auto;
+    padding: 5px;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+  
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media screen and (max-width: 800px) {
+    .column {
+      -ms-flex: 50%;
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column {
+      -ms-flex: 100%;
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
+  
+  /* PORTFOLIO
+  -------------------------------------------------- */

@@ -1,9 +1,24 @@
+<%= render "shared/top_nav" %>
 <%= render "shared/nav" %>
 
 
-<% @posts.each do |post| %>
-    <h1><%= link_to "post.title", post %></h1>
-    <p><%= post.content %></p>
-   
-<% end %>
 
+<main role="main">
+<div class=" bg-light">
+        <section class="container ">
+        <div class="row"> 
+                 <% @posts.each do |post| %>
+                    <div class="column">
+                    <%= image_tag post.image, :class => "img-size" %>
+                        <p><%= link_to post.title, post %></p>
+    
+                    </div>
+                    <% end %>
+
+                    </div>
+        <section>
+        </div>
+
+</main>
+
+<%= render "shared/footer" %>
