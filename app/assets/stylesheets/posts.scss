@@ -4,11 +4,9 @@
 
 /*CATEGORY NAV*/
 
-
 .nav-scroller a, .nav-scroller a:visited {
     color: black !important;
     border: 1px solid black;
-    
     border-radius: 25px;
     text-decoration: none;
     font-family: 'Playfair Display SC', serif;
@@ -16,13 +14,18 @@
     padding: 10px;
   }
 
+  .nav-scroller a:hover {
+    background-color: lightgrey;
+  }
+
 .category-nav {
     padding-top: 30px;
+    margin-bottom: 100px;
 }
 
-.category-nav-items {
-
-    height: 100px;
+.category-nav-items li{
+    display:flex;
+    padding-bottom: 20px;
 }
 /*EACH POST*/
 
@@ -31,8 +34,13 @@
     text-decoration: none;
     font-family: 'Playfair Display SC', serif;
     letter-spacing: 3px;
+    padding: 10px;
   }
-  
+
+  .post-buttons a:hover {
+    background-color: lightgrey;
+    border-radius: 25px;
+  }
 .row {
     justify-content: center;
     padding: 20px;
@@ -49,8 +57,7 @@
 }
 
 
-/* PORTFOLIO
--------------------------------------------------- */
+/* PORTFOLIO------------------------------------------------- */
 
 .header {
     text-align: center;
@@ -72,7 +79,7 @@
     -ms-flex: 30%; /* IE10 */
     flex: 30%;
     max-width: 30%;
-    padding: 0 4px;
+    padding: 0 ;
   }
   
   .img-size {
@@ -103,5 +110,21 @@
     }
   }
   
-  /* PORTFOLIO
-  -------------------------------------------------- */
+  .index-names a, .index-names a:visited {
+    color: black !important;
+    text-decoration: none;
+    font-family: 'Playfair Display SC', serif;
+    letter-spacing: 3px;
+    margin-left: 20px;
+    padding: 0px 10px 0px 10px;
+  }
+
+  .index-names a:hover {
+    background-color: lightgrey;
+    border-radius: 25px;
+  }
+
+
+/* ------------------------------------------------- */
+
+  /* NEW POSTS------------------------------------------------ */

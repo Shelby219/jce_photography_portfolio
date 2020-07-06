@@ -14,7 +14,7 @@ def contact
 end
 
 def portfolio
-    #@artworks = Art.all
+
 end
 
 

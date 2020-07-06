@@ -2,7 +2,7 @@
 <%= render "shared/nav" %>
 
 
-
+<%= link_to "New", new_post_path(@post), :class => "btn btn-dark" %>
 <main role="main">
 <div class=" bg-light">
         <section class="container ">
@@ -10,14 +10,13 @@
                  <% @posts.each do |post| %>
                     <div class="column">
                     <%= image_tag post.image, :class => "img-size" %>
-                        <p><%= link_to post.title, post %></p>
-    
+                        <p class="index-names"><%= link_to post.title, post %></p>
                     </div>
                     <% end %>
 
                     </div>
         <section>
-        </div>
+    </div>
 
 </main>
 
