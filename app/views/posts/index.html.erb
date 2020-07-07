@@ -1,8 +1,9 @@
 <%= render "shared/top_nav" %>
 <%= render "shared/nav" %>
 
-
-<%= link_to "New", new_post_path(@post), :class => "btn btn-dark" %>
+<section class="container text-center">
+<%= link_to "New Post", new_post_path(@post), :class => "btn btn-dark" %>
+</section>
 <main role="main">
 <div class=" bg-light">
         <section class="container ">
@@ -15,7 +16,7 @@
                     <% end %>
 
                     </div>
-        <section>
+        </section>
     </div>
 
 </main>
