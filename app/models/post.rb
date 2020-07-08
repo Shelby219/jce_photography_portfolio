@@ -1,10 +1,10 @@
 class Post < ApplicationRecord
     belongs_to :category
-    validates :title, :content, :category_id, presence: true 
+    validates :title, :content, :category_id, :image, presence: true 
     has_many :line_items, inverse_of: :order
     has_one_attached :image  
     
 end
 
   
-
+ 

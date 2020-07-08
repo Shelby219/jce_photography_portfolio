@@ -16,7 +16,7 @@ class PostsController < ApplicationController
 
     def new
         @post = Post.new
-   end
+    end
 
    def create
         @post = Post.new(post_params)
@@ -40,7 +40,7 @@ class PostsController < ApplicationController
 
     def destroy
         @post.destroy
-        redirect_to root_path
+        redirect_to posts_path
     end
 
     def post_params

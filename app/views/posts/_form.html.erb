@@ -1,6 +1,5 @@
  
-
-    <%= form_for @post, html: { multipart: true,  :class => "form-group" }  do |f| %>
+<%= form_with(model: @post, local:true) do |f| %>
           <%= render "shared/error_messages" %>
           <%= f.collection_select :category_id, Category.all, :id, :name, { prompt: "Choose a category" }, :class => 'form-control' %><br>
           <%= f.label :title %><br>
@@ -12,4 +11,7 @@
           <%= f.submit :class => 'btn btn-dark'%><br>
     <% end %>
 
-   
+    <br>
+    <p class="back-to-photos">
+    <%= link_to("Back to Photos", root_path)%>
+    </p>

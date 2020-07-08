@@ -15,7 +15,7 @@
   }
 
   .nav-scroller a:hover {
-    background-color: lightgrey;
+    color:orange !important; 
   }
 
 .category-nav {
@@ -38,37 +38,44 @@
   }
 
   .post-buttons a:hover {
-    background-color: lightgrey;
-    border-radius: 25px;
+    color:orange !important; 
   }
+
 .row {
     justify-content: center;
     padding: 20px;
     margin: 20px;
 }
 
+.back-to-photos a{
+   text-decoration: none;
+   color:orange !important; 
+}
 
+.back-to-photos a:hover{
+  color:grey !important; 
+}
 
 /*ALL POSTS*/
-
 .img-fluid {
-
     width:100%;
 }
 
-
 /* PORTFOLIO------------------------------------------------- */
 .btn {
-
   border-radius: 25px;
   font-family: 'Playfair Display SC', serif;
     letter-spacing: 3px;
 }
+.btn:hover {
+  color:orange !important; 
+}
+
 .header {
     text-align: center;
     padding: 32px;
   }
-  
+
   .row {
     display: -ms-flexbox; /* IE10 */
     display: flex;
@@ -96,6 +103,11 @@
     margin-right: 10px;
     margin-left: 10px;
   }
+  
+
+
+
+
   
   /* Responsive layout - makes a two column-layout instead of four columns */
   @media screen and (max-width: 800px) {
@@ -125,11 +137,10 @@
   }
 
   .index-names a:hover {
-    background-color: lightgrey;
-    border-radius: 25px;
+    color:orange !important; 
   }
 
 
-/* ------------------------------------------------- */
+/* ---------------------------- */
 
-  /* NEW POSTS------------------------------------------------ */
+/* FORM POSTS------------------------------ */

@@ -6,6 +6,7 @@
 /*Nav Bar*/
 .bg-dark {
     background-color: black;
+    box-shadow: 0 0 25px 0 #343a40;
  }
  
  .nav a, .nav a:visited {
@@ -18,14 +19,9 @@
  }
 
  .nav a:hover {
-  background-color: lightgrey;
-  border-radius: 25px;
-  color:black;
-  
+  color:orange !important; 
 }
 
-
- 
  .nav-item   {
    padding-right: 10px;
    padding-left: 10px;
@@ -35,10 +31,6 @@
  .navbar-brand {
    font-family: 'Homemade Apple', cursive;
  }
-
-
-
-
 
 
 
@@ -56,7 +48,6 @@
  .display-5 {
    margin-top: 100px;
    font-family: 'Homemade Apple', cursive;
- 
  }
  
  .btn, .btn:visited {
@@ -80,6 +71,14 @@
  .color-other-2{
    font-size: 1.5rem;
    font-family: 'Montserrat', sans-serif;
+ }
+
+ .learn-more a,.learn-more a:visited {
+   text-decoration: none;
+   color:white !important;
+ }
+ .learn-more a:hover {
+  color:orange !important;
  }
  /***************************/
  
