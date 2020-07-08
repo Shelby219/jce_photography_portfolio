@@ -3,11 +3,11 @@
           <%= render "shared/error_messages" %>
           <%= f.collection_select :category_id, Category.all, :id, :name, { prompt: "Choose a category" }, :class => 'form-control' %><br>
           <%= f.label :title %><br>
-          <%= f.text_field :title, placeholder: 'Title...' , :class => 'form-control' %><br>
-          <%= f.label :content %><br>
-          <%= f.text_area :content, size: '60x12', placeholder: 'Information text...', :class => 'form-control'  %><br>
+          <%= f.text_field :title, placeholder: '...' , :class => 'form-control' %><br>
           <%= f.label "Image" %><br>
           <%= f.file_field :image , :class => 'form-control ' %><br>
+          <%= f.label :description %><br>
+          <%= f.text_area :content, size: '30x5', placeholder: '...', :class => 'form-control'  %><br>
           <%= f.submit :class => 'btn btn-dark'%><br>
     <% end %>
 
