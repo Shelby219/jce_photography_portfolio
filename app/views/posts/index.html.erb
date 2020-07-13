@@ -10,7 +10,7 @@
         <div class="row"> 
                  <% @posts.each do |post| %>
                     <div class="column">
-                    <%= image_tag post.image, :class => "img-size" %>
+                    <%=image_tag post.image, :class => "img-size" %>
                         <p class="index-names"><%= link_to post.title, post %></p>
                     </div>
                     <% end %>
@@ -18,7 +18,7 @@
                     </div>
         </section>
     </div> 
-
 </main>
 
 <%= render "shared/footer" %>
+

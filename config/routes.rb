@@ -6,7 +6,7 @@ Rails.application.routes.draw do
  get "/about", to:"pages#about", as:"about"
  get "/contact", to:"pages#contact", as:"contact"
  get "/portfolio", to:"pages#portfolio", as:"portfolio"
-
+ get "/admin", to: "posts#admin"
 ##Instead of declaring tions
 #get '/posts',             to: 'posts#index'
 #get '/posts/new',         to: 'posts#new'

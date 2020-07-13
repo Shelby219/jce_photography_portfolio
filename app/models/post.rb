@@ -3,7 +3,6 @@ class Post < ApplicationRecord
     validates :title, :content, :category_id, :image, presence: true 
     has_many :line_items, inverse_of: :order
     has_one_attached :image  
-    
 end
 
   
